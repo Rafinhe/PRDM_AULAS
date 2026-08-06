@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                     value = it.toString().toIntOrNull() ?: 0
                 }
 
-                incrementBt.setOnClickListener {
+                incrementBt.setOnClickListener { //(visorTv.text) eh o set - metodos sao verbos - altere o text!!
                     value++.let { visorTv.text = it.toString() }
                 }
 
