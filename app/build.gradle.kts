@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "br.edu.ifsp.scl.sc3051714.contador"
-    compileSdk = 35
+    compileSdk = 35 //mudamos para 35
 
     defaultConfig {
         applicationId = "br.edu.ifsp.scl.sc3051714.contador"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 35 //mudamos para 35
         versionCode = 1
         versionName = "1.0"
 
@@ -33,6 +33,15 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+
+    //adicionamos:
+
+    buildFeatures{
+        viewBinding = true
+    }
+
+
 }
 
 dependencies {
